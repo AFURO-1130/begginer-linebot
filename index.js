@@ -278,7 +278,7 @@ const postbackFunc = async function (event) {
             "action": {
                 "type": "postback",
                 "label": "あああ",
-                "text": "ああ",
+                
                 "data": "あああ"
             },
             "header": {
@@ -320,19 +320,19 @@ const postbackFunc = async function (event) {
         }
     };
     //正誤判定
-    if (event.postback.data === "1") {
+    if (event.postback.data === "1"){
         ++point;
         point++;
         message = [judge[0], quiz[1]];
         return message;
     }
-    else if (event.postback.data === "3") {
+    else if (event.postback.data === "3"){
         point++;
         message = [judge[0], quiz[2]];
 
         return message;
     }
-    else if (event.postback.data === "5") {
+    else if (event.postback.data === "5"){
         point++;
         message = [judge[0], result];
         return message;
